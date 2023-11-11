@@ -24,6 +24,62 @@
 
 <body id="page-top">
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+
+                                <tr>
+                                    <th>ID:</th>
+                                    <th>Nome Empresa:</th>
+                                    <th>CNPJ:</th>
+                                    <th>Data de Inicio:</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>João Augustto Capistrano </td>
+                                    <td>129.542.149-61</td>
+                                    <td>14/11/2002</td>
+                                    <td>Fiscal</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>João Augustto Capistrano </td>
+                                    <td>129.542.149-61</td>
+                                    <td>14/11/2002</td>
+                                    <td>Fiscal</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -33,7 +89,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    
+
                 </div>
                 <div class="sidebar-brand-text mx-3">MG MONTAGEM</div>
             </a>
@@ -90,16 +146,15 @@
                     </div>
                 </div>
             </li>
-            
-             <!-- Nav Item - Utilities Collapse Menu -->
-             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Obras"
-                    aria-expanded="true" aria-controls="Obras">
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Obras" aria-expanded="true"
+                    aria-controls="Obras">
                     <i class="fas fa-fw fa fa-industry"></i>
                     <span>Obras</span>
                 </a>
-                <div id="Obras" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
+                <div id="Obras" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Obras:</h6>
                         <a class="collapse-item" href="cadastroObra.html">Cadastrar</a>
@@ -109,14 +164,14 @@
                     </div>
                 </div>
             </li>
-            
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
             <!-- Sidebar Message -->
-            
+
 
         </ul>
         <!-- End of Sidebar -->
@@ -243,8 +298,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -255,8 +309,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -267,8 +320,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -300,8 +352,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -335,19 +386,53 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Relatorio</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Relatorio de Obras</h1>
 
                     <div class="row">
 
-                        <div class="col-lg-6">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
 
-                        </div>
+                                    <tr>
+                                        <th>ID:</th>
+                                        <th>Nome Empresa:</th>
+                                        <th>CNPJ:</th>
+                                        <th>Data de Inicio:</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>João Augustto Capistrano </td>
+                                        <td>129.542.149-61</td>
+                                        <td>14/11/2002</td>
+                                        <td>Fiscal</td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#exampleModal">FUNCIONARIO</button></td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSO</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Itm</td>
+                                        <td>Itm</td>
+                                        <td>Itm</td>
+                                        <td>Itm</td>
+                                        <td>Itm</td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#exampleModal">FUNCIONARIO</button></td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSO</button></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
 
-                        <div class="col-lg-6">
-
+                                </tfoot>
+                            </table>
                         </div>
 
                     </div>
+
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -376,25 +461,8 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
