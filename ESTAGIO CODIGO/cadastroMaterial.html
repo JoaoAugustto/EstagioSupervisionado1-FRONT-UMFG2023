@@ -149,7 +149,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Logout
+                                Sair
                             </a>
                         </div>
                         </li>
@@ -159,27 +159,27 @@
                 </nav>
                 <div class="container-fluid">
 
-                    <h1>CADASTRO DE MATERIAL</h1>
+                    <h1 class="h3 mb-4 text-gray-800">CADASTRO DE MATERIAL</h1>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="name">Nome:</label>
-                            <input id="name" class="form-control" type="text" name="name" placeholder="Nome" required>
+                            <label for="nomeRecurso">Nome:</label>
+                            <input id="nomeRecurso" class="form-control" type="text" name="nomeRecurso" placeholder="Nome" required>
                         </div>
 
                         <div class="col-md-6">
-                            <label for="name">Marca:</label>
-                            <input id="name" class="form-control" type="text" name="name" placeholder="CNPJ" required>
+                            <label for="marcaRecurso">Marca:</label>
+                            <input id="marcaRecurso" class="form-control" type="text" name="marcaRecurso" placeholder="Marca" required>
                         </div>
 
                         
                         <div class="col-md-6">
-                            <label for="date">Data de Compra:</label>
+                            <label for="dataCompraRecurso">Data de Compra:</label>
                             <input id="date" class="form-control" type="date" name="date" placeholder="dd/mm/aaaa" required>
                         </div>
 
                         <div class="col-md-6">
-                            <label for="cpf">Quantidade:</label>
-                            <input id="cpf" class="form-control" type="text" name="cpf" placeholder="Rua Nome da rua N°00" required>
+                            <label for="quantidadeRecurso">Quantidade:</label>
+                            <input id="quantidadeRecurso" class="form-control" type="number" name="quantidadeRecurso" placeholder="Quantidade" required>
                                                 
                         </div>
 
@@ -211,24 +211,26 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+   <!-- Logout Modal-->
+   <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">AVISO</h5>
+               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">×</span>
+               </button>
+           </div>
+           <div class="modal-body">Tem certeza de que deseja sair do sistema? Esta ação encerrará sua sessão e desconectará você de todas as operações em andamento. Certifique-se de salvar qualquer trabalho antes de prosseguir. Se tiver certeza, clique em 'Sair' para sair; caso contrário, clique em 'Cancelar' para continuar utilizando o sistema.</div>
+           <div class="modal-footer">
+               <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Cancelar</button>
+               <a class="btn btn-outline-warning" href="login.html">Sair</a>
+           </div>
+       </div>
+   </div>
+</div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
