@@ -167,34 +167,28 @@
                     <h1 class="h3 mb-4 text-gray-800" >CADASTRO DE OBRAS</h1>
 
                     <div class="row">
-                        <div class="col-md-6">
-                            <label for="name">Nome empresa:</label>
+                        <div class="col-md-8">
+                            <label for="name">Nome empresa: <span class="label-req" >*</span></label>
                             <input id="name" class="form-control" type="text" name="name" placeholder="Nome" required>
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="name">CNPJ:</label>
+                        <div class="col-md-4">
+                            <label for="name">CNPJ: <span class="label-req" >*</span></label>
                             <input id="name" class="form-control" type="text" name="name" placeholder="11.111.111/0001-11" required>
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="date">Data de Inicio:</label>
+                        <div class="col-md-4 mt-2">
+                            <label for="date">Data de Inicio: <span class="label-req" >*</span></label>
                             <input id="date" class="form-control" type="date" name="date" placeholder="dd/mm/aaaa" required>
                         </div>
                         
-                        <div class="col-md-6">
-                            <label for="date">Data de Entrega:</label>
+                        <div class="col-md-4 mt-2">
+                            <label for="date">Data de Entrega: <span class="label-req" >*</span></label>
                             <input id="date" class="form-control" type="date" name="date" placeholder="dd/mm/aaaa" required>
                         </div>
-
-                        <div class="col-md-6">
-                            <label for="cpf">Endereço:</label>
-                            <input id="cpf" class="form-control" type="text" name="cpf" placeholder="Rua Nome da rua N°00" required>
-                                                
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="date">Recurso</label>
+                        
+                        <div class="col-md-4 mt-2">
+                            <label for="date">Recurso: <span class="label-req" >*</span></label>
                             <select name="genero" class="form-control">
                                 <option value="F">Aprovado</option>
                                 <option value="F">Paralisada</option>
@@ -203,11 +197,19 @@
                                 <option value="F">Concluido</option>
                             </select>
                         </div>        
+
+                        <div class="col-md-12 mt-2">
+                            <label for="cpf">Endereço: <span class="label-req" >*</span></label>
+                            <input id="cpf" class="form-control" type="text" name="cpf" placeholder="Rua Nome da rua N°00" required>                   
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <span class="label-req">* Campos obrigatorios</span>
+                        </div>
                     </div>
                 </div>                
             </div>
-            <div style="align-self: center;">
-                <button style="border-width: 2px;" type="button" class="btn btn-outline-success">CADASTRAR</button>
+            <div class="col-md-2 mt-3" style="align-self: center;">
+                <button style="border-width: 2px;" type="button" class="btn btn-outline-success"><i class="fas fa-fw fa fa-check"></i> CADASTRAR</button>
             </div>
             <!-- End of Main Content -->
 

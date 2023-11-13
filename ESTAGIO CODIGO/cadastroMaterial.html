@@ -161,41 +161,45 @@
 
                     <h1 class="h3 mb-4 text-gray-800">CADASTRO DE MATERIAL</h1>
                     <div class="row">
-                        <div class="col-md-6">
-                            <label for="nomeRecurso">Nome:</label>
+                        <div class="col-md-8">
+                            <label for="nomeRecurso">Nome: <span class="label-req" >*</span></label>
                             <input id="nomeRecurso" class="form-control" type="text" name="nomeRecurso" placeholder="Nome" required>
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="marcaRecurso">Marca:</label>
+                        <div class="col-md-4">
+                            <label for="marcaRecurso">Marca: <span class="label-req" >*</span></label>
                             <input id="marcaRecurso" class="form-control" type="text" name="marcaRecurso" placeholder="Marca" required>
                         </div>
 
                         
-                        <div class="col-md-6">
-                            <label for="dataCompraRecurso">Data de Compra:</label>
+                        <div class="col-md-4 mt-2">
+                            <label for="dataCompraRecurso">Data de Compra: <span class="label-req" >*</span></label>
                             <input id="date" class="form-control" type="date" name="date" placeholder="dd/mm/aaaa" required>
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="quantidadeRecurso">Quantidade:</label>
+                        <div class="col-md-4 mt-2">
+                            <label for="quantidadeRecurso">Quantidade: <span class="label-req" >*</span></label>
                             <input id="quantidadeRecurso" class="form-control" type="number" name="quantidadeRecurso" placeholder="Quantidade" required>
                                                 
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="date">Recurso</label>
+                        <div class="col-md-4 mt-2">
+                            <label for="date">Recurso <span class="label-req" >*</span></label>
                             <select name="genero" class="form-control">
                                 <option value="F">Mobilizado</option>
                                 <option value="F">Ferramenta</option>
                                 <option value="F">Consumivel</option>
                             </select>
                         </div>
+                        <div class="col-md-4 mt-3">
+                            <span class="label-req">* Campos obrigatorios</span>
+                        </div>
                     </div> 
+                    
                 </div>
             </div>
-            <div style="align-self: center;">
-                <button style="border-width: 2px;" type="button" class="btn btn-outline-success">CADASTRAR</button>
+            <div class="col-md-2 mt-3" style="align-self: center;">
+                <button style="border-width: 2px;" type="button" class="btn btn-outline-success"> <i class="fas fa-fw fa fa-check"></i> CADASTRAR</button>
             </div>
             
             <footer class="sticky-footer bg-white">
