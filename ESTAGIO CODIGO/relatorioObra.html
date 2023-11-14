@@ -30,7 +30,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Lista de Funcionario</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Lista de Funcionários</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -149,13 +149,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa fa-address-book"></i>
-                    <span>Funcionario</span>
+                    <span>Funcionário</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Funcionario:</h6>
                         <a class="collapse-item" href="cadastroFuncionario.html">Cadastro</a>
-                        <a class="collapse-item" href="relatorioFuncionario.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioFuncionario.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -164,14 +164,14 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Material</span>
+                    <span>Recurso</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Materiais:</h6>
                         <a class="collapse-item" href="cadastroMaterial.html">Cadastro</a>
-                        <a class="collapse-item" href="relatorioMaterial.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioMaterial.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -187,7 +187,7 @@
                         <h6 class="collapse-header">Obras:</h6>
                         <a class="collapse-item" href="cadastroObra.html">Cadastrar</a>
                         <a class="collapse-item" href="andamentoObra.html">Andamento</a>
-                        <a class="collapse-item" href="relatorioObra.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioObra.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -202,7 +202,13 @@
                 <!-- Main Content -->
                 <div id="content">
     
-                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
@@ -232,7 +238,7 @@
                     <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Relatorio de Obras</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Relatório de Obras</h1>
 
                     <div class="row">
 
@@ -256,9 +262,9 @@
                                         <td>INFOPEL</td>
                                         <td>129.542.149-61</td>
                                         <td>14/11/2002</td>
-                                        <td>Fiscal</td>
-                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#modalFuncionarioObra">FUNCIONARIO</button></td>
-                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSO</button></td>
+                                        <td>Aprovado</td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#modalFuncionarioObra">FUNCIONÁRIO</button></td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSOS</button></td>
                                     </tr>
                                     <tr>
                                         <td>Itm</td>
@@ -266,8 +272,8 @@
                                         <td>Itm</td>
                                         <td>Itm</td>
                                         <td>Itm</td>
-                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#exampleModal">FUNCIONARIO</button></td>
-                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSO</button></td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-primary" data-toggle="modal"data-target="#exampleModal">FUNCIONÁRIO</button></td>
+                                        <td><button style="border-width: 2px;" type="button" class="btn btn-outline-dark" data-toggle="modal"data-target="#exampleModal">RECURSOS</button></td>
                                     </tr>
                                 </tbody>
                                 <tfoot>

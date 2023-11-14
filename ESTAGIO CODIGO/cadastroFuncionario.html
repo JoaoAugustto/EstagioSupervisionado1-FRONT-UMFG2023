@@ -63,13 +63,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa fa-address-book"></i>
-                    <span>Funcionario</span>
+                    <span>Funcionário</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Funcionario:</h6>
+                        <h6 class="collapse-header">Funcionário:</h6>
                         <a class="collapse-item" href="cadastroFuncionario.html">Cadastro</a>
-                        <a class="collapse-item" href="relatorioFuncionario.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioFuncionario.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -79,14 +79,14 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
-                    <span>Material</span>
+                    <span>Recurso</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Materiais:</h6>
+                        <h6 class="collapse-header">Recurso:</h6>
                         <a class="collapse-item" href="cadastroMaterial.html">Cadastro</a>
-                        <a class="collapse-item" href="relatorioMaterial.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioMaterial.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -104,7 +104,7 @@
                         <h6 class="collapse-header">Obras:</h6>
                         <a class="collapse-item" href="cadastroObra.html">Cadastrar</a>
                         <a class="collapse-item" href="andamentoObra.html">Andamento</a>
-                        <a class="collapse-item" href="relatorioObra.html">Relatorio</a>
+                        <a class="collapse-item" href="relatorioObra.html">Relatório</a>
                     </div>
                 </div>
             </li>
@@ -122,6 +122,11 @@
                        <!-- Topbar -->
                        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+                        <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
     
@@ -150,7 +155,7 @@
                     </nav>
                 <div class="container-fluid">
 
-                    <h1 class="h3 mb-4 text-gray-800">Cadastro de Funcionario</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Cadastro de Funcionário</h1>
 
                     <div class="row">
                         <div class="col-md-8">
@@ -159,7 +164,7 @@
                         </div>
 
                         <div class="col-md-4">
-                            <label for="date">Data de Nacimento: <span class="label-req" >*</span></label>
+                            <label for="date">Data de Nascimento: <span class="label-req" >*</span></label>
                             <input id="date" class="form-control" type="date" name="date" placeholder="dd/mm/aaaa" required>
                         </div>
 
@@ -170,17 +175,17 @@
                         </div>
                         
                         <div class="col-md-4 mt-2">
-                            <label for="date">Genero: <span class="label-req" >*</span></label>
+                            <label for="date">Gênero: <span class="label-req" >*</span></label>
                             <select name="genero" class="form-control">
                                 <option value="F">Masculino</option>
-                                <option value="F">Femenino</option>
+                                <option value="F">Feminino</option>
                                 <option value="F">Outros</option>
                             </select>
                         </div>
                         
                         <div class="col-md-4 mt-2">
                             <label for="cargo">Cargo: <span class="label-req" >*</span></label>
-                            <input id="cargo" class="form-control" type="text" name="cargo" placeholder="Cargo do Funcionario " required>                        
+                            <input id="cargo" class="form-control" type="text" name="cargo" placeholder="Cargo do Funcionário" required>                        
                         </div>
                         
                         <div class="col-md-4 mt-2">
@@ -194,7 +199,7 @@
                         </div>
 
                         <div class="col-md-4 mt-3">
-                            <span class="label-req">* Campos obrigatorios</span>
+                            <span class="label-req">* Campos obrigatórios</span>
                         </div>
 
                     </div>
